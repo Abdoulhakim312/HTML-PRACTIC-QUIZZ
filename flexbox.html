@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flexbox</title>
+  </head>
+  <body>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vdw;
+        height: 100vdh;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        gap: 20px;
+        padding: 20px;
+      }
+      .box {
+        width: 300px;
+        height: 200px;
+        background-color: #11670f;
+        border: 2px solid #092d08;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 24px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+      .box div:hover {
+        transform: scale(1.1);
+      }
+      .box:hover {
+        background-color: #0a2a3c;
+        border-color: #06202e;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #ffcc00;
+        text-decoration: underline;
+      }
+    </style>
+    <div class="container">
+      <div class="box"><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML5</a></div>
+      <div class="box"><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS3</a></div>
+      <div class="box"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a></div>
+      <div class="box"><a href="https://react.dev/">React</a></div>
+      <div class="box"><a href="https://nodejs.org/">Node.js</a></div>
+      <div class="box"><a href="https://www.mongodb.com/">MongoDB</a></div>
+      <div class="box"><a href="https://git-scm.com/">Git</a></div>
+      <div class="box"><a href="https://www.docker.com/">Docker</a></div>
+    </div>
+    </div>
+  </body>
+</html>
